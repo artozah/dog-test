@@ -1,0 +1,180 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* App container for main content and favorites panel */
+.app-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.main-content {
+  flex: 3;
+}
+
+.favorites-panel {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.favorites-panel h2 {
+  margin-top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+/* Main dog image styling */
+.main-dog {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.breed-label {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.favorite-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.favorite-button:hover {
+  background-color: #ff5252;
+}
+
+/* Thumbnails styling */
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.thumbnail-container {
+  cursor: pointer;
+  width: 150px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail-breed {
+  font-size: 0.8rem;
+  margin: 5px 0;
+  text-transform: capitalize;
+}
+
+/* Favorites list styling */
+.no-favorites {
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.favorite-item {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.favorite-item:hover {
+  transform: translateY(-2px);
+}
+
+.favorite-thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.favorite-info {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite-breed {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  text-transform: capitalize;
+  flex-grow: 1;
+}
+
+.remove-button {
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  align-self: flex-end;
+}
+
+.remove-button:hover {
+  background-color: #ff3742;
+}
+
+/* Loading state */
+.App {
+  font-family: sans-serif;
+}
